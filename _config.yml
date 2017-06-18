@@ -14,9 +14,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 lang: en-US
-title: My Awesome Site
+title: Kovai Techathon 2017
 email:
-description:
+description: Kovai Techathon is about celebrating the entrepreneurial & innovative spirit of Coimbatore by coming together and building awesome projects to solve business problems ! It would be a couple days of great learning and innovation. Developers come join us to kick start your dream.
 baseurl: # the optional subpath of your site, e.g. "/blog"
 url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 author:
@@ -31,16 +31,7 @@ logo: # path of site logo, e.g. "/assets/images/logo.png"
 markdown: kramdown
 theme: jekyll-theme-basically-basic
 gems:
-  - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-paginate
-feed:
-  path: atom.xml
-
-# Pagination - https://jekyllrb.com/docs/pagination/
-paginate: 10
-paginate_path: /page:num/
 
 # Exclude from processing.
 exclude:
@@ -68,10 +59,3 @@ exclude:
 
 # Front Matter Defaults
 defaults:
-  # _posts
-  - scope:
-      path: "_posts"
-      type: posts
-    values:
-      layout: post
-      read_time: true
