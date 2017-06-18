@@ -1,7 +1,8 @@
 ---
 layout: home
 paginate: true
-sub_title: "July 22-23, 2017"
+sub_title: Kovai Techathon is about celebrating the entrepreneurial & innovative spirit of Coimbatore by coming together and building awesome projects to solve business problems ! It would be a couple days of great learning and innovation. Developers come join us to kick start your dream.
+date: July 22-23, 2017
 image: /assets/images/image.jpg
 introduction: |
   - Coimbatore’s biggest Hackathon is back !!!
