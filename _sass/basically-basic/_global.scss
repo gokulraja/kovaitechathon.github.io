@@ -2,8 +2,28 @@
    Site-wide
    ========================================================================== */
 
+.title-area {
+  .left {
+   @include span(11 of 16);
+  }
+  .right {
+    @include span(4 of 16);
+    text-align: center;
+    padding-top: 3rem;
+    padding: 1.8125rem 1rem;
+
+    @include breakpoint($medium) {
+      padding-left: 2rem;
+    }
+
+    @include breakpoint($large) {
+      padding-left: 5vw;
+    }
+  }
+}
+
 .site-title {
-  @include fluid-type($min-vw, $max-vw, 20px, 24px);
+  @include fluid-type($min-vw, $max-vw, 50px, 60px);
   margin: 0;
   padding: 1.8125rem 1rem;
   padding-right: calc(10vw + #{$navicon-width}); /* make room for sidebar toggle */
@@ -27,6 +47,11 @@
     min-height: $site-image-height;
     color: $text-color;
     text-decoration: none;
+  }
+
+  .date {
+    @include fluid-type($min-vw, $max-vw, 18px, 28px);
+    font-style: italic;
   }
 }
 

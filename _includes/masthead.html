@@ -7,21 +7,22 @@
 <header id="masthead">
   <div class="inner">
     <div class="title-area">
-      {% if page.url == '/' %}
+      <div class="left">
         <h1 class="site-title">
           <a href="{{ '/' | relative_url }}">
             {% if site.logo %}<img src="{{ site_logo }}" alt="" class="site-logo">{% endif %}
             <span>{{ site.title | escape }}</span>
           </a>
+          {% if page.date %}
+            <span class="date">Date: {{ page.date }}</span>
+          {% endif %}
         </h1>
-      {% else %}
-        <p class="site-title">
-          <a href="{{ '/' | relative_url }}">
-            {% if site.logo %}<img src="{{ site_logo }}" alt="" class="site-logo">{% endif %}
-            <span>{{ site.title | escape }}</span>
-          </a>
-        </p>
-      {% endif %}
+      </div>
+
+      <div class="right align-right">
+        <a href="/" class="btn">Register</a>
+        <div>(Will be open soon)</div>
+      </div>
     </div>
   </div>
 </header>
